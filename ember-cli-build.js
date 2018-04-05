@@ -98,6 +98,7 @@ module.exports = function(defaults) {
   emberDebug = esTranspiler(emberDebug, {
     moduleIds: true,
     plugins: [[modulesBabelPlugin, { noInterop: true }]],
+    presets: ['es2015'],
     resolveModuleSource: moduleResolver
   });
 
